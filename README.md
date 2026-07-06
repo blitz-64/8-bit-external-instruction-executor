@@ -22,7 +22,7 @@ This also lets you create a verilog file to input instructions into the cpu and 
 | RESET | Reset all registers to 0 & clear instruction | RESET |
 
 ## Compiling and running
-The languages used are: Icarus verilog, and C++. To run this, you need them both installed. To view the outputs, the gtkwave software can be installed and used. All files should be contained inside the same folder.
+The languages used are: [Icarus verilog](https://bleyer.org/icarus/), and C++. To run this, you need them both installed. To view the outputs, the [gtkwave software](https://gtkwave.sourceforge.net/) can be installed and used. All files should be contained inside the same folder.
 #
 For the verilog program, it is compiled and executed using command prompt/terminal:
 
