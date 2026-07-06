@@ -4,10 +4,22 @@ This also lets you create a verilog file to input instructions into the cpu and 
 
 ## Operations
 
-| Operation | Info | Syntax |
+| Operation | Info | Syntax example |
 | --- | --- | --- |
 | ADD | Adds the value of the first register to the second register and places the result into the second register | ADD R1 R2 |
 | SUB | Subtracts the value of the first register from the second register's value and places the result into the second register | SUB R1 R2 |
+| AND | Bitwise AND operation on values in the registers; result goes into second register | AND R1 R2 |
+| XOR | Bitwise XOR operation on values in the registers; result goes into second register | XOR R1 R2 |
+| OR | Bitwise OR operation on values in the registers; result goes into second register | OR R1 R2 |
+| CMP | Compare values in the registers, outputs 1 if same, 0 if not. Result goes into second register | CMP R1 R2 |
+| LOAD | Store a number into a register | LOAD R5 37 |
+| OUT | Output a register's stored value | OUT R3 |
+| LSHIFT | Shift a register's value x bits to the left | LSHIFT R1 x |
+| RSHIFT | Shift a register's value x bits to the right | RSHIFT R1 x |
+| INC | Increase a register's value by 1 | INC R1 |
+| DEC | Decrease a register's value by 1 | DEC R1 |
+| MOVE | Move the first register's value into the second register | MOVE R4 R5 |
+| RESET | Reset all registers to 0 & clear instruction | RESET |
 
 ## Compiling and running
 The languages used are: Icarus verilog, and C++. To run this, you need them both installed. To view the outputs, the gtkwave software can be installed and used. All files should be contained inside the same folder.
@@ -31,3 +43,5 @@ A text file is included as an example for how to format the commands if needed.
 - Since it contains no RAM, there are no operations that allow for jumping between instructions at different points. This design only executes instructions line by line as it is given in the provided file
 - Also due to the simple external driven design, it requires a specific timing and so might not work properly if instructions were given to it at different intervals
 - The program to create files for testing only runs instructions line by line, and does not thouroughly test all things (edge cases, timing, etc.) for my design
+- It does not handle negative values and just overflows
+Overall this design isn't very good and doesn't do things with more logical/better methods, but the goal was to learn how verilog worked rather than making a good cpu design.
