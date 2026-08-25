@@ -45,4 +45,4 @@ A text file is included as an example for how to format the commands if needed.
 - The program to create files for testing only runs instructions line by line, and does not thouroughly test all things (edge cases, timing, etc.) for my design
 - It does not handle negative values and just overflows
 
-Overall this design isn't very good and doesn't do things with more logical/better methods, but the goal was to learn how verilog worked rather than making a good cpu design.
+Overall this design isn't the best and doesn't do things with more logical/better methods, but the goal was to learn how Verilog worked rather than making a good cpu design.
