@@ -44,4 +44,5 @@ A text file is included as an example for how to format the commands if needed.
 - Also due to the simple external driven design, it requires a specific timing and so might not work properly if instructions were given to it at different intervals
 - The program to create files for testing only runs instructions line by line, and does not thouroughly test all things (edge cases, timing, etc.) for my design
 - It does not handle negative values and just overflows
+
 Overall this design isn't very good and doesn't do things with more logical/better methods, but the goal was to learn how verilog worked rather than making a good cpu design.
